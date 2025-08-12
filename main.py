@@ -1,17 +1,3 @@
-'''
-#TODO
-Endgame Detector
--If only one player left
--If at river and check
-
-Card Logic
--Add Card Evaluator
-
-Bot 
--Add Bot Brain
-'''
-
-
 # Imports
 from rich.console import Console
 from rich.panel import Panel
