@@ -1,5 +1,10 @@
 import random
 
+
+#CURRENTLY THE BOT HAS NO LOGIC
+#WILL IMPLEMENT BASIC AI INTO BOT IN FUTURE
+
+
 class Bot:
     def __init__(self, name, chips, cards=None, bot=True):
         self.name = name
@@ -15,7 +20,7 @@ class Bot:
         if random.randint(0,1) != 0:
             self.chips -= (bet-put_in)
             return "Call: " + str(int(bet-put_in))
-        elif random.randint(0, 100) == 0:
+        elif random.randint(0, 2) == 0:
             self.chips -= (bet-put_in) * 2
             return "Raise: " + str(int((bet-put_in) * 2))
         else:
